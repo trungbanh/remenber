@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         String ten = intent.getStringExtra("name");
 
         listName.add("mr: Bành Phước Trung");
-        listName.add("mr: Nguyễn Hiệp Thành");
+        listName.add("mr: Đổ Minh Tâm");
         listName.add("mrs: Đỗ Thành Hậu");
 
         mRecyclerView = (RecyclerView) findViewById(R.id.lv);
@@ -89,8 +89,16 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
-        public void onBindViewHolder(ViewHolder holder, int position) {
+        public void onBindViewHolder(ViewHolder holder, final int position) {
             holder.mTextView.setText(arrayList.get(position));
+            holder.mTextView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getApplicationContext(),infoFriend.class);
+                    intent.putExtra("stt",position);
+                    startActivity(intent);
+                }
+            });
         }
 
         @Override
