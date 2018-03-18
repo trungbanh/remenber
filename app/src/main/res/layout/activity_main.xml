@@ -17,14 +17,17 @@
 
         <android.support.v7.widget.Toolbar
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="?attr/actionBarSize"
             android:baselineAligned="false">
 
             <android.support.v7.widget.SearchView
                 app:queryHint="Tìm kiếm"
                 app:iconifiedByDefault="false"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                style="@style/SearchViewStyle"
+                android:layout_margin="5dp"
+                >
 
             </android.support.v7.widget.SearchView>
         </android.support.v7.widget.Toolbar>

@@ -20,13 +20,13 @@
     <EditText
         android:layout_below="@id/image"
         android:id="@+id/edt_name"
-        android:hint="ten ban moi"
+        android:hint="Họ và tên"
         android:singleLine="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
         android:id="@+id/edt_sdt"
-        android:hint="sodienthoai"
+        android:hint="Số điện thoại"
         android:inputType="number"
         android:layout_below="@id/edt_name"
         android:layout_width="match_parent"
@@ -38,12 +38,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/edt_sdt">
         <RadioButton
-            android:text="nam"
+            android:text="Nam"
             android:id="@+id/cb_man"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <RadioButton
-            android:text="nu"
+            android:text="Nữ"
             android:id="@+id/cb_non_man"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -64,7 +64,7 @@
     </Spinner>
     <TextView
         android:id="@+id/tv_shownghenghiep"
-        android:text="nghenghiep"
+        android:text="Nghề nghiệp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_showtuoi"/>
@@ -88,10 +88,12 @@
         android:layout_below="@id/tv_more"/>
     <Button
         android:id="@+id/btn_save"
-        android:text="save"
+        android:textColor="@color/white"
+        android:text="Lưu thông tin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edt_more"/>
+        android:layout_below="@+id/edt_more"
+        android:background="@color/colorPrimary"/>
 
 
 </RelativeLayout>
