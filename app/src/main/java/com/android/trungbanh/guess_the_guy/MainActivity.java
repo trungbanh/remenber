@@ -35,9 +35,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String ten = intent.getStringExtra("name");
 
-        listName.add("mr: Bành Phước Trung");
-        listName.add("mr: Đổ Minh Tâm");
-        listName.add("mrs: Đỗ Thành Hậu");
+        listName.add("Mr: Bành Phước Trung");
+        listName.add("Mr: Đổ Minh Tâm");
+        listName.add("Mrs: Đỗ Thành Hậu");
 
         mRecyclerView = (RecyclerView) findViewById(R.id.lv);
 
