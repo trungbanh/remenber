@@ -33,5 +33,6 @@ public class infoFriend extends AppCompatActivity {
         them.setText(friendList.get(p).ghi_chu);
 
 
+
     }
 }
