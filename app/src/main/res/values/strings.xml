@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">guess_the_guy</string>
+    <string name="action_settings">Settings</string>
+</resources>

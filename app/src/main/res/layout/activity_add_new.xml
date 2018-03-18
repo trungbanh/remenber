@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.android.trungbanh.guess_the_guy.AddNew">
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:hint="ten ban moi"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edt_sdt"
+        android:hint="sodienthoai"
+        android:inputType="number"
+        android:layout_below="@id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/Rg_sex"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_sdt">
+        <RadioButton
+            android:text="nam"
+            android:id="@+id/cb_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="nu"
+            android:id="@+id/cb_non_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/tv_showtuoi"
+        android:text="tuoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Rg_sex"/>
+    <Spinner
+        android:id="@+id/Sp_tuoi"
+        android:layout_toRightOf="@id/tv_showtuoi"
+        android:layout_below="@id/Rg_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+    <TextView
+        android:id="@+id/tv_shownghenghiep"
+        android:text="nghenghiep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_showtuoi"/>
+    <Spinner
+        android:id="@+id/Sp_nghe"
+        android:layout_toRightOf="@id/tv_shownghenghiep"
+        android:layout_below="@id/tv_showtuoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Spinner>
+    <TextView
+        android:id="@+id/tv_more"
+        android:text="thong tin them"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Sp_nghe"/>
+    <EditText
+        android:id="@+id/edt_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_more"/>
+    <Button
+        android:id="@+id/btn_save"
+        android:text="save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_more"/>
+
+
+</RelativeLayout>
