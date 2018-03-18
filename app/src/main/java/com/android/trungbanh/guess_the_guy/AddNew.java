@@ -16,9 +16,9 @@ import java.util.ArrayList;
 
 public class AddNew extends AppCompatActivity {
 
-    String arr[] = {"giám  đốc",
-                    "phó giám đốc",
-                    "gần phó giám đốc"};
+    String arr[] = {"Giám  đốc",
+                    "Phó giám đốc",
+                    "Gần phó giám đốc"};
     ArrayList<String> old ;
 
     Button save ;
