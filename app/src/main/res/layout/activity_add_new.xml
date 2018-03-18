@@ -8,7 +8,17 @@
     android:gravity="center"
     tools:context="com.android.trungbanh.guess_the_guy.AddNew">
 
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image"
+        android:layout_margin="5dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/customer" />
+
+
     <EditText
+        android:layout_below="@id/image"
         android:id="@+id/edt_name"
         android:hint="ten ban moi"
         android:singleLine="true"
@@ -67,7 +77,7 @@
     </Spinner>
     <TextView
         android:id="@+id/tv_more"
-        android:text="thong tin them"
+        android:text="Thông tin thêm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/Sp_nghe"/>

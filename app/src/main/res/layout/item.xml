@@ -32,7 +32,7 @@
                 android:id="@+id/tv_linhvuc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lĩnh vực: Công nghệ thông tin" />
+                android:text="Nghề nghiệp: Công nghệ thông tin" />
             <TextView
                 android:layout_marginTop="5dp"
                 android:id="@+id/tv_sdt"
