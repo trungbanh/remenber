@@ -9,7 +9,7 @@
     android:gravity="center"
     tools:context="com.android.trungbanh.guess_the_guy.infoFriend">
 
-    <TecầxtView
+    <TextView
         android:text="mr:Bành Phước Trung 20 tuổi "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
